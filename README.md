@@ -13,7 +13,7 @@ Random Quotes is a very simple web application built with Go that gives you rand
 - Gin
 
 ## Getting Started
-To get started with Go URL Shortener, you will need to have Go installed on your computer. You can download Go from the official website: https://golang.org/dl/
+To get started with Random Quotes, you will need to have Go installed on your computer. You can download Go from the official website: https://golang.org/dl/
 
 Once you have Go installed, follow these steps:
 - Clone the repository to your local machine using
