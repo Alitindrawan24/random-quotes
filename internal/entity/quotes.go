@@ -1,6 +1,6 @@
 package entity
 
 type Quotes struct {
-	Quotes string
-	Author string
+	Quotes string `json:"quotes"`
+	Author string `json:"author"`
 }
