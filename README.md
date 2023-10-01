@@ -39,5 +39,13 @@ go run cmd/main.go
 - Create a minimum frontend to consume the API
 - Add more quotes and categorizing the quotes by tag
 
+## How to contribute
+- Star this repository.
+- Create an issue with description that how you want to contribute in this project.
+- Then fork this repository.
+- In forked repository add your changes.
+- Then make pull request with issue number.
+- Wait for review.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/MarketingPipeline/README-Quotes/blob/main/LICENSE) file for details.
