@@ -2,7 +2,8 @@ package quotes
 
 import (
 	"encoding/json"
-	"os"
+	"fmt"
+
 	"random-quotes/internal/entity"
 
 	"github.com/gin-gonic/gin"
@@ -10,12 +11,15 @@ import (
 
 func (repository *Repository) GetQuotes(ctx *gin.Context) ([]entity.Quotes, error) {
 
-	file, _ := os.Open("data/quotes.json")
+	file, err := repository.fs.Open("data/quotes.json")
+	if err != nil {
+		return nil, fmt.Errorf("could not open file: %w", err)
+	}
 	defer file.Close()
 
 	decode := json.NewDecoder(file)
 	quotes := []entity.Quotes{}
-	err := decode.Decode(&quotes)
+	err = decode.Decode(&quotes)
 
 	if err != nil {
 		return quotes, err
