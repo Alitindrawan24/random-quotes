@@ -1,2 +1,6 @@
 run:
-	@go run ./cmd/main.go
+	@make build
+	./random-quotes
+
+build:
+	@go build -v -o random-quotes ./cmd/main.go

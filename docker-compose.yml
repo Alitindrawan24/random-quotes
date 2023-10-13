@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  random-quotes:
+    build: .
+    labels:
+      app: random-quotes
+    ports:
+      - "8080:8080"
+    networks:
+      - random_quotes
+networks:
+  random_quotes:
+    driver: bridge
